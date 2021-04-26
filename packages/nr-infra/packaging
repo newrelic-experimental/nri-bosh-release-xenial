@@ -1,0 +1,4 @@
+set -ex
+
+echo "copying the infra deb to install target"
+cp newrelic-infra_1.5.66_amd64.deb ${BOSH_INSTALL_TARGET}/newrelic-infra_1.5.66_amd64.deb

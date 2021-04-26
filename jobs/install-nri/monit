@@ -1,0 +1,4 @@
+check process newrelic-infra with pidfile "/run/newrelic-infra/newrelic-infra.pid"
+  start program = "/bin/systemctl start newrelic-infra"
+  stop program = "/bin/systemctl stop newrelic-infra"
+  group vcap

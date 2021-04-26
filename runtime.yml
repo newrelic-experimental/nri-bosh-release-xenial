@@ -1,0 +1,23 @@
+releases:
+- name: nri-bosh-release-xenial
+  version: 1.2.1
+
+addons:
+- name: nri-bosh-release-xenial
+  jobs:
+  - name: install-nri
+    release: nri-bosh-release-xenial
+  include:
+    stemcell:
+    - os: ubuntu-xenial
+  properties:
+    infra_agent:
+      license_key: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+      environment: xenial
+      agent_props:
+        http_server_enabled: TRUE
+        http_server_host: localhost
+        http_server_port: 8081
+      custom_attributes:
+        firstName: Paul
+        lastName: Brant

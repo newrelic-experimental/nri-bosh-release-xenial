@@ -1,0 +1,5 @@
+---
+name: nr-infra
+
+files:
+- newrelic-infra_1.5.66_amd64.deb
