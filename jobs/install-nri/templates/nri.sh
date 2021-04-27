@@ -59,7 +59,7 @@ while :
 do
   (
       flock -x 200
-      sudo dpkg --force-confdef -i /var/vcap/packages/nr-infra/newrelic-infra_1.5.66_amd64.deb
+      sudo dpkg --force-confdef -i /var/vcap/packages/nr-infra/newrelic-infra_1.16.5_amd64.deb
   ) 200>/var/vcap/data/dpkg.lock
   if [ $? -ne 0 ] ; then
     echo "Install failed. Calling wait_for_dpkg_lock"
