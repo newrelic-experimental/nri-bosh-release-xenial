@@ -9,7 +9,7 @@ The release is meant to be installed as an addon. In order to facilitate that, a
 
 To use, upload the release:
 ```bash
-bosh upload-release ~/Downloads/nr-bosh-release-xenial-1.2.1.c.tgz
+bosh upload-release ~/Downloads/nr-bosh-release-xenial-1.2.3.tgz
 ```
 
 ## Update license key

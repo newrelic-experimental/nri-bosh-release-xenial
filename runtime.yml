@@ -12,10 +12,10 @@ addons:
     - os: ubuntu-xenial
   properties:
     infra_agent:
-      license_key: c0d6b55119d808171e4c036605db70e7fa0178fe
+      license_key: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
       environment: xenial
       agent_props:
         # prop: gets added to /etc/newrelic-infra.yml config file
       custom_attributes:
         platform: pcf
-        foundation: lightcrimson
+        foundation: foundation_name
