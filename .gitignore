@@ -1,5 +1,6 @@
 config/private.yml
 dev_releases
+release
 releases/*.tgz
 releases/**/*.tgz
 .dev_builds
