@@ -1,1 +1,5 @@
 name: nri-bosh-release-xenial
+blobstore:
+  provider: local
+  options:
+    blobstore_path: /Users/shahram/projects/manulife/bosh_release/shahramk/blobstore
