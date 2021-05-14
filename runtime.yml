@@ -1,6 +1,6 @@
 releases:
 - name: nri-bosh-release-xenial
-  version: 1.2.4
+  version: 1.16.5
 
 addons:
 - name: nri-bosh-release-xenial
@@ -12,10 +12,10 @@ addons:
     - os: ubuntu-xenial
   properties:
     infra_agent:
-      license_key: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+      license_key: ______ENTER_NEW_RELIC_LICENSE_KEY_______
       environment: xenial
       agent_props:
         # prop: gets added to /etc/newrelic-infra.yml config file
       custom_attributes:
-        platform: pcf
-        foundation: foundation_name
+        platform: _____ENTER_PLATFORM_NAME_____
+        foundation: _____ENTER_PCF_FOUNDATIUON_NAME_____
