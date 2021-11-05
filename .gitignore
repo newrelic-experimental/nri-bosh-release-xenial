@@ -1,9 +1,11 @@
 config/private.yml
 dev_releases
 release
+releases
 releases/*.tgz
 releases/**/*.tgz
 .dev_builds
+.final_builds
 .final_builds/jobs/**/*.tgz
 .final_builds/packages/**/*.tgz
 .DS_Store
