@@ -6,7 +6,7 @@
 
 This is a self contained bosh release for installing the New Relic Infrastructure agent on Cloud Foundry. It includes the [.deb] package as a blob and has an install script that installs the package. It is a standard BOSH install package for Ubuntu Xenial.
 
-The release is meant to be installed as an addon. In order to facilitate that, a sample runtime.yml file is included. It follows the BOSH package installation procedure.
+The release is meant to be installed as an addon. In order to facilitate that, a sample runtime.yml file is included with properties required for the installation procedure.
 
 
 ## Installation
@@ -20,7 +20,7 @@ bosh upload-release ~/Downloads/nr-bosh-release-xenial-1.20.7.tgz
 
 ### Update runtime config
 
-In runtime.yml in the base directory of the repo, set the `license_key` parameter to the target New Relic account's license key that you'd like infrastructure agents to report to. 
+In the sample runtime.yml file in the base directory of the repo, set the `license_key` parameter to the target New Relic account's license key to which you'd like infrastructure agents to report. 
 
 If there are other values that you wish to modify (e.g. agent properties, custom attributes) you could make those changes here.
 
@@ -33,7 +33,7 @@ bosh update-runtime-config runtime.yml
 
 Finally, use <strong>`"bosh deploy"`</strong> command to redeploy the release.
 <br/>
-<strong>Note:</strong> bosh deploy command arguments vary. Please refer to BOSH documentation for [bosh deploy](https://bosh.io/docs/cli-v2/#deploy) command options.
+<strong>Note:</strong> bosh deploy command arguments vary. Please refer to BOSH documentation for [bosh deploy](https://bosh.io/docs/cli-v2/#deploy) command options for your CF foundation.
 
 
 
@@ -73,7 +73,7 @@ bosh blobs
 bosh remove-blob <PREVIOUS_INFRASTRUCTURE_BLOB_PATH>
 ```
 
-- download the latest <strong>"amd"</strong>  built for Infrastructure agent (e.g. `newrelic-infra_systemd_1.20.7_amd64.deb`)
+- download the latest <strong>"amd"</strong> build for Infrastructure agent (e.g. `newrelic-infra_systemd_1.20.7_amd64.deb`)
 ```bash
 wget -q https://download.newrelic.com/infrastructure_agent/linux/apt/pool/main/n/newrelic-infra/newrelic-infra_systemd_${new_agent_version}_amd64.deb
 ```
